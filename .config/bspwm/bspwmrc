@@ -29,7 +29,7 @@ workspaces() {
 		#bspc monitor ${monitor} -n "$name" -d 'I' 'II' 'III' 'IV' 'V' 'VI' 'VII' 'VIII'
 		#bspc monitor ${monitor} -n "$name" -d '' '' '' '' '' '' '' ''
 		bspc monitor eDP-1 -d ' Terminal' ' Browser' ' Arquivos' ' Code' ' PDF' ' Social' ' Media' ' Configs' 'DOK' 'sysADM'
-		bspc monitor HDMI-1 -d '' '' '' '' '' '' '' ''
+		bspc monitor HDMI-1 -d '11' '12' '13' '14' '15' '16' '17' '18' '19' '20'
 		let name++
 	done
 }
