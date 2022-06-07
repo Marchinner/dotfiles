@@ -148,11 +148,46 @@ super + {Tab,grave}
 	bspc {node,desktop} -f last
 
 # Send focused window to another workspace
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}' --follow
+#super +{1-9,0}
+#	bspc desktop -f '^{1-9,10}' & bspc desktop -f '^{11-19,20}'
 
-super + ctrl + {_,shift +}{1-9,0}
-	bspc {desktop -f,node -d} '^{11-19,20}' --follow
+super + 1
+	bspc desktop -f ^1 & bspc desktop -f ^11
+
+super + 2
+	bspc desktop -f ^2 & bspc desktop -f ^12
+
+super + 3
+	bspc desktop -f ^3 & bspc desktop -f ^13
+
+super + 4
+	bspc desktop -f ^4 & bspc desktop -f ^14
+
+super + 5
+	bspc desktop -f ^5 & bspc desktop -f ^15
+
+super + 6
+	bspc desktop -f ^6 & bspc desktop -f ^16
+
+super + 7
+	bspc desktop -f ^7 & bspc desktop -f ^17
+
+super + 8
+	bspc desktop -f ^8 & bspc desktop -f ^18
+
+super + 9
+	bspc desktop -f ^9 & bspc desktop -f ^19
+
+super + 0
+	bspc desktop -f ^10 & bspc desktop -f ^20
+
+
+super + shift + {1-9,0}
+	bspc node -d '^{1-9,10}' --follow
+
+
+super + ctrl + {1-9,0}
+	bspc node -d '^{11-19,20}' --follow
 
 # Expanding windows
 super + control + {Left,Right,Up,Down}
