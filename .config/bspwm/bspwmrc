@@ -81,7 +81,7 @@ for i in ${office[@]}; do
    bspc rule -a $i desktop='^5' follow=on focus=on; done
 
 # 6 > Communication
-declare -a comm=(Thunderbird TelegramDesktop Hexchat whatsdesk Discord)
+declare -a comm=(TelegramDesktop Hexchat whatsdesk Discord)
 for i in ${comm[@]}; do
    bspc rule -a $i desktop='^6' follow=on focus=on; done
 
@@ -110,7 +110,7 @@ bspc rule -a 'Wine' desktop='^0' follow=on focus=on
 bspc rule -a Plank layer=above manage=on border=off focus=off locked=on
 
 declare -a floating=(alacritty-float Pcmanfm Onboard Yad 'Firefox:Places' \
-Viewnior feh Nm-connection-editor Anydesk)
+Viewnior feh Nm-connection-editor)
 for i in ${floating[@]}; do
    bspc rule -a $i state=floating follow=on focus=on; done
 
