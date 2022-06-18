@@ -107,7 +107,7 @@ bspc rule -a 'org.remmina.Remmina' desktop='^0' follow=on focus=on
 bspc rule -a 'Wine' desktop='^0' follow=on focus=on
 
 # special rules
-bspc rule -a Plank layer=above manage=on border=off focus=off locked=on
+bspc rule -a Plank layer=above manage=off border=off focus=off locked=on
 
 declare -a floating=(alacritty-float Pcmanfm Onboard Yad 'Firefox:Places' \
 Viewnior feh Nm-connection-editor)
@@ -158,8 +158,11 @@ bspcolors &
 bspbar &
 nm-applet &
 bspcomp &
-plank &
 bash ~/tela.sh &
 bash ~/monitores.sh &
 bash bspc monitor HDMI-1 -s eDP-1 &
 blueman-applet &
+Xfce4-terminal &
+bash plank
+#bash ~/minhaPlank.sh &
+#plank &
