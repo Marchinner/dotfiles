@@ -159,10 +159,4 @@ bspbar &
 nm-applet &
 bspcomp &
 bash ~/tela.sh &
-bash ~/monitores.sh &
-bash bspc monitor HDMI-1 -s eDP-1 &
 blueman-applet &
-Xfce4-terminal &
-bash plank
-#bash ~/minhaPlank.sh &
-#plank &
